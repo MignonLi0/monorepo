@@ -7,6 +7,7 @@ use crate::mmr::{
 use commonware_cryptography::{Hasher as CHasher, Sha256};
 use commonware_runtime::{Clock, Metrics, Storage as RStorage};
 use commonware_utils::hex;
+mod peaksmmr;
 
 /// Build the MMR corresponding to the stability test `ROOTS` and confirm the
 /// roots match that from the builder's root computation
